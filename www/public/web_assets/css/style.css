@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ====================================== Navbar ========================================= */
+.navbar {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0 8rem;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+
+.navbar_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* ====================================== Banner ======================================== */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+.bottom_bar {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+}
+
+.bottom_bar_center_text {
+    text-align: center;
+    margin-left: 145px;
+    font-family: var(--roboto-condensed);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.bottom_bar_inner {
+    width: 100%;
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_bar_inner .socials .social_item {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--secondary-color);
+}
+
+.bottom_bar_inner .socials .social_item:hover {
+    color: var(--secondary-color-hover);
+}
+
+.sidebar {
+    border-left: none;
+}
+
+.sidebar .offcanvas-header {
+    background: aliceblue;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sidebar .offcanvas-title {
+    font-size: 2.5rem;
+    font-family: var(--roboto-condensed);
+}
+
+.sidebar .sidebar_list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+
+.sidebar .sidebar_list a {
+    text-decoration: none;
+    color: #111;
+}
+
+.sidebar .sidebar_list a li {
+    padding: 20px;
+    font-family: var(--roboto-condensed);
+}
+
+.sidebar .sidebar_list a li.active,
+.sidebar .sidebar_list a li:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.text-banner {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+/* =========================================== Home | Game info section =================================== */
+.info {
+    margin-top: 4rem;
+}
+
+.info_inner .row {
+    align-items: center;
+}
+
+.info_inner_item {
+    transform: skew(-21deg);
+}
+
+.info_inner_item:last-child {
+    transform: skew(0deg);
+}
+
+.inner_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-family: var(--roboto-condensed);
+}
+
+.inner_item span {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    transform: skew(21deg);
+}
+
+.skew_image {
+    width: 7rem;
+    height: 8rem;
+    background-color: var(--main-color);
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skew_image i {
+    font-size: 3rem;
+    transform: skew(21deg);
+}
+
+/* ======================================== Home | Game summary section ============================ */
+.game_summary {
+    margin-top: 10rem;
+}
+
+.game_summary_item {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.inner_bg_light {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f2f2f2;
+    min-height: 28rem;
+    width: 20rem;
+    transform: skew(-21deg);
+    transform-origin: top;
+}
+
+.game_summary .game_summary_item_inner .inner_text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================= Home | Game structure ===================================== */
+.structure {
+    margin-top: 5rem;
+}
+
+.structure img {
+    position: relative;
+    z-index: 1;
+}
+
+.structure_item {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 2rem;
+    transform: skew(-21deg);
+    transform-origin: top;
+}
+
+.structure_item .structure_heading {
+    font-size: 2rem;
+    font-family: var(--roboto-condensed);
+    font-weight: 700;
+}
+
+.structure_item ul li {
+    font-size: 1.5rem;
+    font-family: var(--roboto-condensed);
+}
+
+.list {
+    margin-top: 5rem;
+}
+
+.list_inner_item {
+    display: flex;
+}
+
+.list_inner_item p {
+    line-height: 2.5rem;
+}
+
+/* ======================================== Game rules | Rules =============================== */
+.rules ul li {
+    font-weight: 500;
+}
+
+.rules ul li span,
+.list-style-type-none li {
+    font-size: 1rem;
+}
+
+/* ========================================= Login / Register ======================================= */
+.auth {
+    min-height: 100vh;
+}
+
+.auth .auth_inner_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.auth .action .btn {
+    display: inline-block;
+    padding: 1rem 0;
+    background-color: #111;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--roboto-condensed);
+    width: 100%;
+    box-shadow: none;
+}
+
+.auth .action .btn.active {
+    background-color: var(--main-color);
+}
+
+.auth .social_login_btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth label {
+    font-size: 1.3rem;
+    font-family: var(--roboto-condensed);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.auth .form-control,
+.auth .form-select {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: var(--roboto-condensed);
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.auth small {
+    font-size: 1.3rem;
+}
+
+.auth small a {
+    color: #111;
+}
+
+.auth button[type="submit"] {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: var(--roboto-condensed);
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.auth .otp_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth .otp_digit {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#otpForm input::-webkit-outer-spin-button,
+#otpForm input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.auth .resend_otp_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth .resend_otp_box a {
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+/* ========================================= Select Level =================================== */
+.select_level {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.single_level {
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid transparent;
+}
+
+.select_level .single_level {
+    font-family: var(--roboto-condensed);
+}
+
+.select_level .single_level .single_level_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select_level .level_title,
+.select_level .level_price {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.select_level ul li {
+    font-size: 1.5rem;
+}
+
+.level_price_div {
+    background-color: #f8f9fa;
+    padding: 0.5rem 1.5rem;
+    transform: skew(-21deg);
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.circle {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 8px solid #f8f9fa;
+}
+
+.select_level .level_price {
+    transform: skew(21deg);
+}
+
+.single_level:hover,
+.single_level.active {
+    border-bottom: 5px solid var(--main-color);
+}
+
+.single_level:hover .circle,
+.single_level.active .circle {
+    border-color: var(--main-color);
+}
+
+.single_level:hover .level_price_div,
+.single_level.active .level_price_div {
+    background-color: var(--main-color);
+}
+
+.single_level:hover .level_price,
+.single_level.active .level_price {
+    color: #fff;
+}
+
+.select_level #makePaymentBtn {
+    background-color: var(--main-color);
+    border: 0;
+    color: #fff;
+    font-family: var(--roboto-condenced);
+    font-weight: 700;
+    padding: 1rem 3rem;
+}
+
+.select_level #makePaymentBtn:hover {
+    background-color: var(--main-color-hover);
+}
+
+/* ========================================= Footer ========================================= */
+.footer {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer .links a {
+    text-decoration: none;
+    color: #111;
+}
+
+.footer .social_item {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+/*********************** Css By Dipankar *******************************/
+
+.country-code-input-box {
+    background-color: #f9f9f9;
+    width: 20%;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.country-code-input-box:focus-visible {
+    outline: aliceblue;
+}

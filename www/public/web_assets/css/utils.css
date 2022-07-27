@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+    --main-color: #39b54a;
+    --main-color-hover: #5eb96a;
+    --secondary-color: #111;
+    --secondary-color-hover: rgb(17, 17, 17, 0.8);
+    --roboto-condensed: "Roboto Condensed", sans-serif;
+}
+
+.bg_black {
+    background-color: black;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+/* Skew button */
+.skew_button {
+    color: #fff;
+    background: var(--secondary-color);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    display: inline-block;
+    transform: skew(-21deg);
+}
+
+.skew_button:hover {
+    color: #fff;
+    background: var(--secondary-color-hover);
+}
+
+/* Un-skew the text */
+.skew_button span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+.heading {
+    font-family: var(--roboto-condensed);
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 3.8rem;
+}
+
+.skew_21 {
+    transform: skew(-21deg);
+    transform-origin: top;
+}
+
+.skew_minus_21 {
+    transform: skew(21deg);
+}
+
+.font_roboto {
+    font-family: var(--roboto-condensed);
+}
+
+.mb-50 {
+    margin-bottom: 5rem;
+}
+
+.p-50 {
+    padding: 5rem;
+}
+
+.line-height-15 {
+    line-height: 1.5rem;
+}
+
+.list-style-type-none {
+    list-style-type: none;
+}
+
+.h-100-vh {
+    height: 100vh;
+}
+
+.flex-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,139 @@
+@media (max-width: 575.98px) {
+    .navbar {
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: unset;
+    }
+
+    .navbar_inner .btn,
+    .navbar_inner .btn img {
+        height: 40px;
+    }
+
+    .offcanvas {
+        width: 70%;
+    }
+
+    .banner_img {
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .bottom_bar {
+        position: unset;
+        margin-top: 3rem;
+    }
+
+    .bottom_bar_inner {
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+
+    .bottom_bar_center_text {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bottom_bar_inner .socials .social_item {
+        font-size: 3rem;
+    }
+
+    .bottom_bar_center_text span {
+        color: #111;
+    }
+
+    .skew_button {
+        padding: 10px 7px;
+    }
+
+    .bottom_bar_inner .socials .social_item {
+        margin-right: 1rem;
+    }
+
+    .info_inner_item,
+    .inner_item span,
+    .skew_image i {
+        transform: unset;
+    }
+
+    .structure_item,
+    .structure_item .structure_heading,
+    .structure_item ul {
+        transform: skew(0);
+    }
+
+    .rules_inner .p-50 {
+        padding: 2rem;
+    }
+
+    .auth .auth_inner_left {
+        min-height: 70vh;
+    }
+
+    .auth .heading {
+        font-size: 3rem;
+    }
+
+    .footer {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .offcanvas {
+        width: 60%;
+    }
+
+    .bottom_bar {
+        position: unset;
+        margin-top: 3rem;
+    }
+
+    .bottom_bar_inner {
+        flex-direction: column;
+    }
+
+    .bottom_bar_center_text {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bottom_bar_center_text span {
+        color: #111;
+    }
+
+    .bottom_bar_inner .socials .social_item {
+        font-size: 3rem;
+    }
+
+    .info_inner_item,
+    .inner_item span,
+    .skew_image i {
+        transform: unset;
+    }
+
+    .structure_item,
+    .structure_item .structure_heading,
+    .structure_item ul {
+        transform: skew(0);
+    }
+
+    .auth .auth_inner_left {
+        min-height: unset;
+    }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
